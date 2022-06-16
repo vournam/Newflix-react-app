@@ -1,0 +1,34 @@
+movie-app > .row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.img-container {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+
+.img-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.overlay {
+    overflow: auto;
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
