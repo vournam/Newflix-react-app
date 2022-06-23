@@ -26,6 +26,7 @@ function App() {
     // console.log(responseJson);
     if(responseJson.Search) {
       setMovies(responseJson.Search);
+      // console.log(movies);
     }
   }
 
